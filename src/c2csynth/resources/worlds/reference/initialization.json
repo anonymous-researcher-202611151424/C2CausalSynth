@@ -1,0 +1,19 @@
+{
+  "coupon_valid_days": {
+    "buyer": 1,
+    "listing": 1,
+    "item": 1
+  },
+  "initial_inventory": "precomputed once using the published concentrated inventory rule",
+  "initial_inventory_seed": 42,
+  "last_sale_recency_days": {
+    "positive_7_day_sale_count": 3,
+    "positive_30_day_only": 18,
+    "otherwise": 999
+  },
+  "gap_before_last_sale_days": 30,
+  "public_history_expansion": "last-7-day mass uniform over 7 days; remaining 30-day mass uniform over prior 23 days",
+  "prior_assignment_history": "empty",
+  "private_states": "drawn internally from the specified world and simulation seed",
+  "calendar": "relative days and weekday; an artificial origin preserves the original weekday"
+}

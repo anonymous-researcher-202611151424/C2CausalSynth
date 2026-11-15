@@ -1,0 +1,9 @@
+{
+  "world_id": "reference-v1",
+  "scope": "P1 fidelity and sequential policy benchmark",
+  "files_sha256": {
+    "initialization.json": "06b09861f50f5b94de4624113ba01185f2f7d08ae8518a0e96506490072308a5",
+    "inventory_rule.json": "10857eb3cce33b7e3b528fb0cc28fc8e2c776674310b2fc25a952c34fb01817f",
+    "parameters.json": "e0f9f1f599825245adad18c034b7f5e426faed72196700f723e2e8318d3d1aef"
+  }
+}

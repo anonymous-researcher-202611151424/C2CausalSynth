@@ -1,0 +1,121 @@
+{
+  "world_id": "reference-v1",
+  "reference_world_unchanged": true,
+  "checks": {
+    "train": {
+      "rows": 420000,
+      "columns": 54,
+      "identical_after_id_category_calendar_relabeling": true
+    },
+    "encoder": {
+      "identical": true
+    },
+    "validation": {
+      "rows": 210000,
+      "columns": 54,
+      "identical_after_id_category_calendar_relabeling": true
+    },
+    "test_initial": {
+      "rows": 3000,
+      "columns": 16,
+      "identical_after_id_category_calendar_relabeling": true
+    },
+    "oracle_replicate_0": {
+      "users": 3000,
+      "days": 42,
+      "policies": [
+        "logging_025",
+        "responsive_025",
+        "noop"
+      ],
+      "all_events_and_actions_identical": true
+    },
+    "oracle_replicate_1": {
+      "users": 3000,
+      "days": 42,
+      "policies": [
+        "logging_025",
+        "responsive_025",
+        "noop"
+      ],
+      "all_events_and_actions_identical": true
+    },
+    "paper_tables": {
+      "count": 20,
+      "identical": true,
+      "files": [
+        "revision_bias.tex",
+        "revision_calibration_loss.tex",
+        "revision_cohorts.tex",
+        "revision_errors_14.tex",
+        "revision_errors_21.tex",
+        "revision_fidelity_14.tex",
+        "revision_fidelity_7.tex",
+        "revision_fidelity_levels.tex",
+        "revision_fidelity_levels_all.tex",
+        "revision_fidelity_windows.tex",
+        "revision_horizons.tex",
+        "revision_ipw.tex",
+        "revision_lifts.tex",
+        "revision_mechanism_numbers.tex",
+        "revision_numbers.tex",
+        "revision_parameters.tex",
+        "revision_rct_interval.tex",
+        "revision_rct_opportunity.tex",
+        "revision_sell_gap_counts.tex",
+        "revision_wins.tex"
+      ]
+    },
+    "all_reported_run_worlds": {
+      "runs": 30,
+      "parameters": 30,
+      "parameters_inventory_rule_and_validity_identical": true
+    },
+    "smoke_suite": {
+      "passed": true,
+      "regimes": [
+        "randomized",
+        "observable",
+        "latent"
+      ],
+      "runs": 4,
+      "common_oracle_reuse": true,
+      "reported_horizons": [
+        7,
+        14,
+        21
+      ],
+      "resume_verified": true
+    },
+    "tests": {
+      "passed": 19,
+      "failed": 0,
+      "installed_wheel_in_independent_environment": true
+    },
+    "aggregate_recomputation": {
+      "benchmark_log_rows": 2412,
+      "benchmark_summary_rows": 279,
+      "oracle_replicates": 128,
+      "fidelity_conditions": 3,
+      "passed": true
+    },
+    "figure_rendering": {
+      "figures": 7,
+      "rendered_and_visually_checked": true
+    },
+    "installation": {
+      "python": "3.12.13",
+      "platform": "macOS arm64",
+      "device": "CPU",
+      "wheel_resources_verified": true,
+      "quickstart_users": 256,
+      "quickstart_days": 21
+    }
+  },
+  "limits": [
+    "The full 30-log paper training/Monte Carlo suite was not rerun during packaging.",
+    "Exact export comparisons cover randomized log 1 and the first two shared oracle replicates.",
+    "Operational outcomes required for refitting empirical calibration and recomputing empirical fidelity are not distributed."
+  ],
+  "scope": "Release/export validation, not an independent empirical replication."
+}

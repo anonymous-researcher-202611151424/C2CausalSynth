@@ -1,0 +1,91 @@
+{
+  "primary_cohorts": {
+    "train": {
+      "users": 9437
+    },
+    "validation": {
+      "users": 5685
+    },
+    "q2_fresh": {
+      "users": 5715
+    },
+    "q3_train": {
+      "users": 17045
+    },
+    "q3_validation": {
+      "users": 5682
+    },
+    "q3_fresh": {
+      "users": 5690
+    }
+  },
+  "searched_parameters": [
+    "purchase_intercept",
+    "listing_intercept",
+    "sale_intercept",
+    "purchase_user_sd",
+    "listing_user_sd",
+    "sale_user_sd",
+    "purchase_extra_count",
+    "listing_extra_count",
+    "initial_extra_inventory",
+    "inventory_zero",
+    "inventory_log_shape",
+    "purchase_engagement_retention",
+    "listing_engagement_retention",
+    "engagement_noise",
+    "purchase_satiation",
+    "satiation_retention",
+    "purchase_engagement_share",
+    "sale_to_listing_gain",
+    "latent_correlation",
+    "fresh_item_sale_lift"
+  ],
+  "loss_weights": {
+    "incidence": 3.0,
+    "mean_count": 2.0,
+    "multiple_event_rate": 0.75,
+    "zero_user_share": 0.75,
+    "user_incidence_sd": 1.0,
+    "weekly_incidence": 0.5,
+    "delivery_window_incidence": 0.5,
+    "lagged_joint_incidence": 0.75,
+    "buyer_campaign_contrast": 1.0
+  },
+  "loss_floors": {
+    "incidence": 0.02,
+    "mean_count": 0.025,
+    "multiple_event_rate": 0.005,
+    "zero_user_share": 0.1,
+    "user_incidence_sd": 0.025,
+    "weekly_incidence": 0.03,
+    "delivery_window_incidence": 0.05,
+    "lagged_joint_incidence": 0.01,
+    "buyer_campaign_contrast": 0.04
+  },
+  "excluded_moments": [
+    "delivery_window_incidence",
+    "buyer_campaign_contrast"
+  ],
+  "delivery_coverage_penalty_weight": 0.25,
+  "primary_loss": "Mean squared tolerance-normalized incidence, count, and user KS, summed across the three groups",
+  "fit_replicates": {
+    "period_1": 2,
+    "period_2": 4
+  },
+  "selection_replicates": {
+    "period_1": 5,
+    "period_2": 20
+  },
+  "evaluation_replicates": 20,
+  "observed_bootstrap_replicates": 200,
+  "evaluation_sample": "Independent sample drawn after model and transfer selection were frozen",
+  "transfer_parameters": [
+    "purchase_intercept",
+    "listing_intercept",
+    "sale_intercept",
+    "sale_user_sd",
+    "purchase_extra_count",
+    "listing_extra_count"
+  ]
+}

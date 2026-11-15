@@ -1,0 +1,13 @@
+period,gap_bin,n_rows,lcr_14d,selection_contract
+q2,no_sale_7d,1813632,0.0310603253581763,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q2,gap_0_6d,1797,0.12743461324429606,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q2,gap_7_13d,862,0.1368909512761021,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q2,gap_14_27d,1259,0.14614773629864972,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q2,gap_28_55d,9822,0.1248218285481572,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q2,gap_56d_plus,7128,0.09076879910213244,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,no_sale_7d,1596083,0.03157417252110323,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,gap_0_6d,1258,0.1232114467408585,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,gap_7_13d,587,0.13798977853492334,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,gap_14_27d,1082,0.11460258780036968,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,gap_28_55d,9098,0.12123543635963949,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal
+q3,gap_56d_plus,6980,0.08982808022922636,exact 30k pre-period light UTG users; uncensored 14d outcome; organic_row=1; list_cnt_30d=0; descriptive/noncausal

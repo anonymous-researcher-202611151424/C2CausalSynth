@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c2causalsynth"
+version = "0.1.0"
+description = "A daily closed-loop simulator for sequential coupon policy evaluation in C2C marketplaces"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = ["numpy>=2.4,<3", "pandas>=2.3,<3", "scipy>=1.18,<2"]
+
+[project.optional-dependencies]
+benchmark = ["torch>=2.12,<3", "scikit-learn>=1.9,<2", "joblib>=1.6,<2"]
+figures = ["matplotlib>=3.11,<4"]
+test = ["pytest>=9.2,<10"]
+
+[project.scripts]
+c2csynth-benchmark = "c2csynth.benchmark:main"
+c2csynth-suite = "c2csynth.suite:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+c2csynth = ["resources/worlds/*/*.json", "resources/population/*.json", "resources/population/*.gz", "resources/population/*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

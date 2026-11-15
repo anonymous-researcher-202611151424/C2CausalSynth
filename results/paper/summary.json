@@ -1,0 +1,17 @@
+{
+  "period_1_fresh": {
+    "max_abs_relative_incidence_error": 0.0298875612631039,
+    "max_abs_relative_count_error": 0.1081844523698039,
+    "max_user_incidence_ks": 0.0267238717697605
+  },
+  "period_2_fresh_fixed": {
+    "max_abs_relative_incidence_error": 0.1520740875329231,
+    "max_abs_relative_count_error": 0.1007387882237754,
+    "max_user_incidence_ks": 0.0736445567461305
+  },
+  "period_2_fresh_releveled": {
+    "max_abs_relative_incidence_error": 0.0567498888479454,
+    "max_abs_relative_count_error": 0.0449114909897372,
+    "max_user_incidence_ks": 0.0325032424997604
+  }
+}

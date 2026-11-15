@@ -1,0 +1,61 @@
+{
+  "rows": 27000,
+  "columns": [
+    "user_id",
+    "device_os",
+    "region",
+    "days_since_signup",
+    "buy_cnt_7d",
+    "list_cnt_7d",
+    "sold_cnt_7d_pre",
+    "buy_cnt_30d",
+    "list_cnt_30d",
+    "sold_cnt_30d_pre",
+    "active_listing_inventory"
+  ],
+  "public_id_pattern": "uNNNNN",
+  "calendar_origin": "2000-01-05",
+  "fixed_segment": "light",
+  "fixed_group": "UTG",
+  "category_counts": {
+    "device_os": 4,
+    "region": 48
+  },
+  "initial_state_origin": "empirical baseline summaries; synthetic initial inventory",
+  "removed": [
+    "original identifiers",
+    "identifier mapping",
+    "actual calendar dates",
+    "category labels",
+    "observed future outcomes"
+  ],
+  "split_sizes": {
+    "test": 3000,
+    "train_01": 10000,
+    "validation_01": 5000,
+    "train_02": 10000,
+    "validation_02": 5000,
+    "train_03": 10000,
+    "validation_03": 5000,
+    "train_04": 10000,
+    "validation_04": 5000,
+    "train_05": 10000,
+    "validation_05": 5000,
+    "train_06": 10000,
+    "validation_06": 5000,
+    "train_07": 10000,
+    "validation_07": 5000,
+    "train_08": 10000,
+    "validation_08": 5000,
+    "train_09": 10000,
+    "validation_09": 5000,
+    "train_10": 10000,
+    "validation_10": 5000
+  },
+  "row_order": "public identifiers preserve source ordering; split arrays index the exported table",
+  "scope": "union of initial users needed for ten factual logs and the common evaluation cohort",
+  "files_sha256": {
+    "initial_states.csv.gz": "5571cb6f2ef623dbae991439c2b8c499b359a1e9e1828ce99515a70e0f2cf9c5",
+    "splits.npz": "5727072487dfae866c66f3bb6ef48d0b2c80cc5bce4bfc3841904f6fcfffe1e0"
+  }
+}

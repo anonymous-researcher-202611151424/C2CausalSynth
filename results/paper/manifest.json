@@ -1,0 +1,20 @@
+{
+  "world": "item_market",
+  "oracle_matches_current_parameters": true,
+  "oracle_mc": 128,
+  "users": 3000,
+  "benchmark_settings": {
+    "control_share": 0.2,
+    "train_users": 10000,
+    "validation_users": 5000,
+    "test_users": 3000,
+    "epochs": 30,
+    "patience": 10,
+    "oracle_mc": 128,
+    "model_mc": 32
+  },
+  "fidelity_replicates": 20,
+  "estimator_results": "ten logs per regime; compact GT on the first three",
+  "world_id": "reference-v1",
+  "world_sha256": "cdbc9e47ddebfac1f9944abea56f96a800b3b480dc74da8f18c7151b6c6390e3"
+}
